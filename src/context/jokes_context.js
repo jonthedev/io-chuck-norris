@@ -12,7 +12,6 @@ import { URL } from '../utils/constants'
 const initialState = {
   jokes_loading: false,
   jokes_error: false,
-  favourites: [],
   jokes: []
 }
 
@@ -32,8 +31,6 @@ export const JokesProvider = ({ children }) => {
       dispatch({ type: JOKES_ERROR })
     }
   }
-
-  const addToFavourites = () => {}
 
   return (
     <JokesContext.Provider

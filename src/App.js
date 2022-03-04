@@ -1,9 +1,14 @@
 import './App.css'
 import JokesList from './components/JokesList/JokesList'
 import { useJokesContext } from './context/jokes_context'
+import { useLocalStorage } from './hooks/useLocalStorage'
 
 function App() {
   const { fetchJokes, jokes } = useJokesContext()
+  const [favourites, setFavourites] = useLocalStorage(
+    'favourites',
+    []
+  )
 
   return (
     <div className='App'>
