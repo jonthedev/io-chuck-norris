@@ -7,7 +7,9 @@ function App() {
 
   return (
     <div className='App'>
-      <button onClick={() => fetchJokes()}>Load Jokes</button>
+      <button className='btn' onClick={() => fetchJokes()}>
+        Load Jokes
+      </button>
       <JokesList jokes={jokes} />
     </div>
   )
