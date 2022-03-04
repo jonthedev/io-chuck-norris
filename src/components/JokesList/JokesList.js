@@ -1,10 +1,12 @@
+import JokesListItem from '../JokeListItem/JokesListItem'
+
 const JokesList = ({ jokes = [] }) => {
   return (
-    <div className='jokes-list'>
+    <ul className='jokes-list'>
       {jokes.map(joke => {
-        return <p key={joke.id}>{joke.joke}</p>
+        return <JokesListItem key={joke.id} joke={joke} />
       })}
-    </div>
+    </ul>
   )
 }
 
