@@ -1,4 +1,13 @@
 .jokes-list-item {
   padding: 10px;
   margin: 10px 0;
+
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.jokes-list-item-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
