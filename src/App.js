@@ -1,7 +1,14 @@
 import './App.css'
+import { useJokesContext } from './context/jokes_context'
 
 function App() {
-  return <div className='App'>IO test</div>
+  const { fetchJokes } = useJokesContext()
+
+  return (
+    <div className='App'>
+      <button onClick={() => fetchJokes()}>Load Jokes</button>
+    </div>
+  )
 }
 
 export default App
