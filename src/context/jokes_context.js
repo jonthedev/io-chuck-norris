@@ -1,4 +1,4 @@
-import React, { useContext, useReducer } from 'react'
+import React, { useContext, useEffect, useReducer } from 'react'
 import jokes_reducer from '../reducers/jokes_reducer'
 
 import {
