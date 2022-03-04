@@ -1,0 +1,3 @@
+export const JOKES_LOADING = 'JOKES_LOADING'
+export const JOKES_ERROR = 'JOKES_ERROR'
+export const JOKES_FETCH = 'JOKES_FETCH'
