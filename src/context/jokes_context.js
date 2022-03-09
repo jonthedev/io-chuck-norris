@@ -32,6 +32,16 @@ export const JokesProvider = ({ children }) => {
     }
   }
 
+  //set local storage
+  useEffect(() => {
+    if (!localStorage.getItem('favourites')) {
+      localStorage.setItem('favourites', JSON.stringify([]))
+    } else {
+      const savedFavourites = localStorage.getItem('favourites')
+      console.log(savedFavourites)
+    }
+  }, [])
+
   return (
     <JokesContext.Provider
       value={{
